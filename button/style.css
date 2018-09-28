@@ -1,0 +1,46 @@
+body{
+  background-color:#f3f3f3;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;/* //vh = 100% khung  */
+}
+.switch{
+  -webkit-appearance:none;
+  appearance:none; /* đưa khung check box về dạng nguyên bản để mình có thể tùy biến khung check box theo ý mình  */
+  width:80px;
+  height:40px;
+  background-color:#c6c6c6;
+ /*  thiết kế ô checkbox theo ý mình */
+ border-radius:40px;
+ border: 1px solid gray;
+ outline:none;/*  khi click vào sẽ không hiện ô vuông bên ngoài  */
+ position: relative;
+ transition:200ms;
+}
+.switch:checked{
+  background-color:#2ff90f;
+  border:1px solid #2ff90f;
+}
+.switch:before{
+  content:'';/* không có không chạy */
+  width:39px;
+  height:39px;
+  position: absolute;
+  background-color:#FFF;
+  border-radius:50%;
+  top:0px;
+  left:0px;
+  transition:200ms;
+}/* tạo hình tròn bên trong */
+.switch:checked:before{
+  left:39px;
+}/* tạo hiệu ứng trượt qua */
+
+
+
+
+
+
+
+
