@@ -1,0 +1,42 @@
+body{
+  font-family:"Roboto" sans-serf;
+  color:#333;
+  display: grid;
+  grid-template-columns : repeat(3, 1fr); /* chia làm 3 cột bằng nhau  */
+  grid-gap: 1rem; /* khoảng cách giữa các cột */
+}
+.wrapper{
+  display: block;
+  background-color:gray;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.wrapper:hover{
+  background-color:rgb(196,196,196);
+}
+.wrapper:hover .box  .card{
+  transform: translate(50px,-50px);
+  background-color: rgba(255,255,255,0.659)
+  }
+.box{
+  position: relative;
+  display: inline-block;/*  hiển thị nội dung vừa tấm ảnh cho box */
+  background-color:#FFF;
+  transform: rotate(-30deg) skew(25deg) scale(.666) ; /* nghiêng ngang 25 độ . xoay 30 độ  */
+  box-shadow: -4px 4px 14px rgba(0,0,0,.3);
+  border-radius: 4px;
+}
+.card{
+  padding: 10px 10px 6px 10px;
+  background-color:#FFF;
+  background-color: transparent; /* trong suốt */
+  border:1px solid gray;
+  transition: 220ms;
+  
+}
+.card .title{
+  text-align: center;
+  font-size : 1.2rem;
+}
+@media(max-width:992px;)
